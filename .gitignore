@@ -2,3 +2,5 @@ voc2007.txt
 voc2007test.txt
 .ipynb_checkpoints/*
 VOCdevkit/*
+model_best.pth
+model_latest.pth
