@@ -2,7 +2,11 @@
  "cells": [
   {
    "cell_type": "code",
+<<<<<<< HEAD
+   "execution_count": 7,
+=======
    "execution_count": 28,
+>>>>>>> 7763e36cb6e79f4149f5793a02154d2b7caa5931
    "id": "666081b2",
    "metadata": {},
    "outputs": [],
@@ -47,7 +51,11 @@
   },
   {
    "cell_type": "code",
+<<<<<<< HEAD
+   "execution_count": 8,
+=======
    "execution_count": 29,
+>>>>>>> 7763e36cb6e79f4149f5793a02154d2b7caa5931
    "id": "389d3f58",
    "metadata": {},
    "outputs": [],
@@ -183,7 +191,11 @@
   },
   {
    "cell_type": "code",
+<<<<<<< HEAD
+   "execution_count": 9,
+=======
    "execution_count": 30,
+>>>>>>> 7763e36cb6e79f4149f5793a02154d2b7caa5931
    "id": "00057c5a",
    "metadata": {},
    "outputs": [],
@@ -260,7 +272,11 @@
   },
   {
    "cell_type": "code",
+<<<<<<< HEAD
+   "execution_count": 10,
+=======
    "execution_count": 31,
+>>>>>>> 7763e36cb6e79f4149f5793a02154d2b7caa5931
    "id": "1f47d0ef",
    "metadata": {},
    "outputs": [],
@@ -279,7 +295,11 @@
   },
   {
    "cell_type": "code",
+<<<<<<< HEAD
+   "execution_count": 11,
+=======
    "execution_count": 32,
+>>>>>>> 7763e36cb6e79f4149f5793a02154d2b7caa5931
    "id": "caf5fc37",
    "metadata": {},
    "outputs": [],
@@ -367,7 +387,11 @@
   },
   {
    "cell_type": "code",
+<<<<<<< HEAD
+   "execution_count": 12,
+=======
    "execution_count": 33,
+>>>>>>> 7763e36cb6e79f4149f5793a02154d2b7caa5931
    "id": "05e53bf8",
    "metadata": {},
    "outputs": [
@@ -407,7 +431,11 @@
   },
   {
    "cell_type": "code",
+<<<<<<< HEAD
+   "execution_count": 17,
+=======
    "execution_count": 34,
+>>>>>>> 7763e36cb6e79f4149f5793a02154d2b7caa5931
    "id": "b007e911",
    "metadata": {},
    "outputs": [],
@@ -570,7 +598,11 @@
   },
   {
    "cell_type": "code",
+<<<<<<< HEAD
+   "execution_count": 18,
+=======
    "execution_count": 35,
+>>>>>>> 7763e36cb6e79f4149f5793a02154d2b7caa5931
    "id": "41d68225",
    "metadata": {},
    "outputs": [],
@@ -592,7 +624,11 @@
   },
   {
    "cell_type": "code",
+<<<<<<< HEAD
+   "execution_count": 19,
+=======
    "execution_count": 36,
+>>>>>>> 7763e36cb6e79f4149f5793a02154d2b7caa5931
    "id": "b1cd74c9",
    "metadata": {},
    "outputs": [],
@@ -739,14 +775,29 @@
   },
   {
    "cell_type": "code",
+<<<<<<< HEAD
+   "execution_count": 20,
+=======
    "execution_count": 37,
+>>>>>>> 7763e36cb6e79f4149f5793a02154d2b7caa5931
    "id": "9b2c05b0",
    "metadata": {},
    "outputs": [
     {
+<<<<<<< HEAD
+     "ename": "RuntimeError",
+     "evalue": "CUDA error: device-side assert triggered",
      "output_type": "error",
      "traceback": [
       "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mRuntimeError\u001b[0m                              Traceback (most recent call last)",
+      "Input \u001b[0;32mIn [20]\u001b[0m, in \u001b[0;36m<cell line: 1>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43mtrain\u001b[49m\u001b[43m(\u001b[49m\u001b[43m)\u001b[49m\n",
+      "Input \u001b[0;32mIn [19]\u001b[0m, in \u001b[0;36mtrain\u001b[0;34m()\u001b[0m\n\u001b[1;32m     11\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mtrain\u001b[39m():\n\u001b[1;32m     12\u001b[0m     \u001b[38;5;66;03m# check cuda\u001b[39;00m\n\u001b[1;32m     13\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m torch\u001b[38;5;241m.\u001b[39mcuda\u001b[38;5;241m.\u001b[39mis_available():\n\u001b[0;32m---> 14\u001b[0m         \u001b[43mtorch\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mcuda\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mmanual_seed\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;241;43m123\u001b[39;49m\u001b[43m)\u001b[49m\n\u001b[1;32m     15\u001b[0m     \u001b[38;5;28;01melse\u001b[39;00m:\n\u001b[1;32m     16\u001b[0m         torch\u001b[38;5;241m.\u001b[39mmanual_seed(\u001b[38;5;241m123\u001b[39m)\n",
+      "File \u001b[0;32m~/anaconda3/envs/Lab_env/lib/python3.9/site-packages/torch/cuda/random.py:95\u001b[0m, in \u001b[0;36mmanual_seed\u001b[0;34m(seed)\u001b[0m\n\u001b[1;32m     92\u001b[0m     default_generator \u001b[38;5;241m=\u001b[39m torch\u001b[38;5;241m.\u001b[39mcuda\u001b[38;5;241m.\u001b[39mdefault_generators[idx]\n\u001b[1;32m     93\u001b[0m     default_generator\u001b[38;5;241m.\u001b[39mmanual_seed(seed)\n\u001b[0;32m---> 95\u001b[0m \u001b[43m_lazy_call\u001b[49m\u001b[43m(\u001b[49m\u001b[43mcb\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[0;32m~/anaconda3/envs/Lab_env/lib/python3.9/site-packages/torch/cuda/__init__.py:116\u001b[0m, in \u001b[0;36m_lazy_call\u001b[0;34m(callable)\u001b[0m\n\u001b[1;32m    114\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21m_lazy_call\u001b[39m(callable):\n\u001b[1;32m    115\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m is_initialized():\n\u001b[0;32m--> 116\u001b[0m         \u001b[43mcallable\u001b[49m\u001b[43m(\u001b[49m\u001b[43m)\u001b[49m\n\u001b[1;32m    117\u001b[0m     \u001b[38;5;28;01melse\u001b[39;00m:\n\u001b[1;32m    118\u001b[0m         \u001b[38;5;66;03m# TODO(torch_deploy): this accesses linecache, which attempts to read the\u001b[39;00m\n\u001b[1;32m    119\u001b[0m         \u001b[38;5;66;03m# file system to get traceback info. Patch linecache or do something\u001b[39;00m\n\u001b[1;32m    120\u001b[0m         \u001b[38;5;66;03m# else here if this ends up being important.\u001b[39;00m\n\u001b[1;32m    121\u001b[0m \n\u001b[1;32m    122\u001b[0m         \u001b[38;5;66;03m# Don't store the actual traceback to avoid memory cycle\u001b[39;00m\n\u001b[1;32m    123\u001b[0m         _queued_calls\u001b[38;5;241m.\u001b[39mappend((callable, traceback\u001b[38;5;241m.\u001b[39mformat_stack()))\n",
+      "File \u001b[0;32m~/anaconda3/envs/Lab_env/lib/python3.9/site-packages/torch/cuda/random.py:93\u001b[0m, in \u001b[0;36mmanual_seed.<locals>.cb\u001b[0;34m()\u001b[0m\n\u001b[1;32m     91\u001b[0m idx \u001b[38;5;241m=\u001b[39m current_device()\n\u001b[1;32m     92\u001b[0m default_generator \u001b[38;5;241m=\u001b[39m torch\u001b[38;5;241m.\u001b[39mcuda\u001b[38;5;241m.\u001b[39mdefault_generators[idx]\n\u001b[0;32m---> 93\u001b[0m \u001b[43mdefault_generator\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mmanual_seed\u001b[49m\u001b[43m(\u001b[49m\u001b[43mseed\u001b[49m\u001b[43m)\u001b[49m\n",
+      "\u001b[0;31mRuntimeError\u001b[0m: CUDA error: device-side assert triggered"
+=======
      "name": "stderr",
      "output_type": "stream",
      "text": [
@@ -788,6 +839,7 @@
       "File \u001b[0;32m~/opt/anaconda3/lib/python3.9/site-packages/torch/_tensor.py:363\u001b[0m, in \u001b[0;36mTensor.backward\u001b[0;34m(self, gradient, retain_graph, create_graph, inputs)\u001b[0m\n\u001b[1;32m    354\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m has_torch_function_unary(\u001b[38;5;28mself\u001b[39m):\n\u001b[1;32m    355\u001b[0m     \u001b[38;5;28;01mreturn\u001b[39;00m handle_torch_function(\n\u001b[1;32m    356\u001b[0m         Tensor\u001b[38;5;241m.\u001b[39mbackward,\n\u001b[1;32m    357\u001b[0m         (\u001b[38;5;28mself\u001b[39m,),\n\u001b[0;32m   (...)\u001b[0m\n\u001b[1;32m    361\u001b[0m         create_graph\u001b[38;5;241m=\u001b[39mcreate_graph,\n\u001b[1;32m    362\u001b[0m         inputs\u001b[38;5;241m=\u001b[39minputs)\n\u001b[0;32m--> 363\u001b[0m \u001b[43mtorch\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mautograd\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mbackward\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mgradient\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mretain_graph\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mcreate_graph\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43minputs\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43minputs\u001b[49m\u001b[43m)\u001b[49m\n",
       "File \u001b[0;32m~/opt/anaconda3/lib/python3.9/site-packages/torch/autograd/__init__.py:173\u001b[0m, in \u001b[0;36mbackward\u001b[0;34m(tensors, grad_tensors, retain_graph, create_graph, grad_variables, inputs)\u001b[0m\n\u001b[1;32m    168\u001b[0m     retain_graph \u001b[38;5;241m=\u001b[39m create_graph\n\u001b[1;32m    170\u001b[0m \u001b[38;5;66;03m# The reason we repeat same the comment below is that\u001b[39;00m\n\u001b[1;32m    171\u001b[0m \u001b[38;5;66;03m# some Python versions print out the first line of a multi-line function\u001b[39;00m\n\u001b[1;32m    172\u001b[0m \u001b[38;5;66;03m# calls in the traceback and some print out the last line\u001b[39;00m\n\u001b[0;32m--> 173\u001b[0m \u001b[43mVariable\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_execution_engine\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mrun_backward\u001b[49m\u001b[43m(\u001b[49m\u001b[43m  \u001b[49m\u001b[38;5;66;43;03m# Calls into the C++ engine to run the backward pass\u001b[39;49;00m\n\u001b[1;32m    174\u001b[0m \u001b[43m    \u001b[49m\u001b[43mtensors\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mgrad_tensors_\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mretain_graph\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mcreate_graph\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43minputs\u001b[49m\u001b[43m,\u001b[49m\n\u001b[1;32m    175\u001b[0m \u001b[43m    \u001b[49m\u001b[43mallow_unreachable\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;28;43;01mTrue\u001b[39;49;00m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43maccumulate_grad\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;28;43;01mTrue\u001b[39;49;00m\u001b[43m)\u001b[49m\n",
       "\u001b[0;31mKeyboardInterrupt\u001b[0m: "
+>>>>>>> 7763e36cb6e79f4149f5793a02154d2b7caa5931
      ]
     }
    ],
